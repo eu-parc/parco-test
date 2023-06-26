@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/parco-test-module
+
+idspace: PARCO-TEST-MODULE
+base_url: /obo/parco-test-module
+
+products:
+- parco-test-module.owl: https://raw.githubusercontent.com/eu-parc/parco-test-module/main/parco-test-module.owl
+- parco-test-module.obo: https://raw.githubusercontent.com/eu-parc/parco-test-module/main/parco-test-module.obo
+
+term_browser: ontobee
+example_terms:
+- PARCO-TEST-MODULE_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/eu-parc/parco-test-module/v
+
+- prefix: /tracker/
+  replacement: https://github.com/eu-parc/parco-test-module/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/PARCO-TEST-MODULE?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/eu-parc/parco-test-module/main/
+
