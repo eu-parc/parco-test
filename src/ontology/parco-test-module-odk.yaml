@@ -30,8 +30,9 @@ github_org: eu-parc
 gzip_main: false
 id: parco-test-module
 import_component_format: ofn
-import_group: null
-import_pattern_ontology: false
+import_group:
+    products:
+    - id: pato 
 license: https://creativecommons.org/licenses/unspecified
 namespaces: null
 obo_format_options: ''
