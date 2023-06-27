@@ -33,7 +33,8 @@ import_component_format: ofn
 import_group:
     products:
     - id: pato 
-      module_type_slme: TOP
+      module_type: slme
+      module_type_slme: STAR
 license: https://creativecommons.org/licenses/unspecified
 namespaces: null
 obo_format_options: ''
@@ -49,7 +50,7 @@ release_artefacts:
 release_date: false
 release_diff: false
 release_use_reasoner: true
-remove_owl_nothing: false
+remove_owl_nothing: true
 repo: parco-test-module
 robot_java_args: ''
 robot_report:

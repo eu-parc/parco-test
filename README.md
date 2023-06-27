@@ -1,10 +1,10 @@
 
-![Build Status](https://github.com/eu-parc/parco-test-module/workflows/CI/badge.svg)
-# parco-test-module
+![Build Status](https://github.com/eu-parc/parco-test/workflows/CI/badge.svg)
+# parco-test
 
 Description: None
 
-More information can be found at http://obofoundry.org/ontology/parco-test-module
+More information can be found at http://obofoundry.org/ontology/parco-test
 
 ## Versions
 
@@ -12,17 +12,17 @@ More information can be found at http://obofoundry.org/ontology/parco-test-modul
 
 The latest version of the ontology can always be found at:
 
-http://purl.obolibrary.org/obo/parco-test-module.owl
+http://si.eu-parc.eu/parco-test.owl
 
 (note this will not show up until the request has been approved by obofoundry.org)
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/parco-test-module-edit.owl](src/ontology/parco-test-module-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/parco-test-edit.owl](src/ontology/parco-test-edit.owl)
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/eu-parc/parco-test-module/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/eu-parc/parco-test/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 

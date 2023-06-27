@@ -309,6 +309,14 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: pato
+
+$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/pato_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method STAR \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -408,7 +416,7 @@ $(ONT).obo: $(ONT).owl
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------
-SHARED_ROBOT_COMMANDS = 
+SHARED_ROBOT_COMMANDS = remove --term owl:Nothing
 
 $(ONTOLOGYTERMS): $(SRCMERGED)
 	$(ROBOT) query -f csv -i $< --query ../sparql/parco-test-module_terms.sparql $@
