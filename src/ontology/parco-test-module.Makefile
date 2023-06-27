@@ -4,7 +4,7 @@
 ## changes here rather than in the main Makefile
 
 .PHONY: all
-all: templates all_odk 
+all: templates components/vocabulary.owl all_odk 
 
 TEMPLATESDIR=../templates
 
@@ -14,7 +14,7 @@ $(TEMPLATESDIR)/%.owl: $(TEMPLATESDIR)/%.tsv $(SRC)
 	$(ROBOT) merge -i $(SRC) template --prefix "parco: http://si.eu-parc.eu/PARCO-" --template $< --output $@ && \
 			  $(ROBOT) annotate --input $@ --ontology-iri $(ONTBASE)/components/$*.owl -o $@
 		  
-components/merged_parco_vocabulary.owl: $(TEMPLATES)
+components/vocabulary.owl: $(TEMPLATES)
 	  $(ROBOT) merge $(patsubst %, -i %, $^) \
 			    annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ \
 					    --output $@.tmp.owl && mv $@.tmp.owl $@

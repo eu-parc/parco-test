@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/parco-test-module.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -9,15 +8,17 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/parco-test-module.owl>
+Ontology(<http://si.eu-parc.eu/parco-test-module.owl>
 
+Import(<http://si.eu-parc.eu/parco-test-module/components/vocabulary.owl>)
+Import(<http://si.eu-parc.eu/parco-test-module/imports/pato_import.owl>)
 
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "parco-test-module")
 
 
-Declaration(Class(<http://purl.obolibrary.org/obo/PARCO-TEST-MODULE_0000000>))
+Declaration(Class(<http://si.eu-parc.eu/PARCO-TEST_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -34,10 +35,9 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/PARCO-TEST-MODULE_0000000> (root node)
+# Class: <http://si.eu-parc.eu/PARCO-TEST_0000000> (root node)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PARCO-TEST-MODULE_0000000> "root node"@en)
-
+AnnotationAssertion(rdfs:label <http://si.eu-parc.eu/PARCO-TEST_0000000> "root node"@en)
 
 )
 

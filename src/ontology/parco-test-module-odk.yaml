@@ -33,6 +33,7 @@ import_component_format: ofn
 import_group:
     products:
     - id: pato 
+      module_type_slme: TOP
 license: https://creativecommons.org/licenses/unspecified
 namespaces: null
 obo_format_options: ''

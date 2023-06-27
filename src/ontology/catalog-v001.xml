@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-
-
-  
-
+  <uri name="http://si.eu-parc.eu/parco-test-module/components/vocabulary.owl" uri="components/vocabulary.owl"/>
+  <uri name="http://si.eu-parc.eu/parco-test-module/imports/pato_import.owl" uri="imports/pato_import.owl"/>
 </group>
 </catalog>
