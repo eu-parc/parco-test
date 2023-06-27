@@ -1,3 +1,5 @@
 Ontology ID	Label	definition	definition source	has curation status	example of usage	editor note	term editor	curator note	exact synonym	Member of superset	db xref	deprecated
-ID	LABEL SPLIT=|	A IAO:0000115	A definition source SPLIT=|	AI has curation status	A example of usage SPLIT=|	A editor note SPLIT=|	A term editor SPLIT=|	A rdfs:comment SPLIT=|	A oboInOwl:hasExactSynonym	C 'part of' superset %	A http://www.geneontology.org/formats/oboInOwl#hasDbXref SPLIT=|	A owl:deprecated
-PARCO-TEST:0000001	robot	robots are a kind of thing that 										
+ID	LABEL	A IAO:0000115	A definition source SPLIT=|	AI has curation status	A example of usage SPLIT=|	A editor note SPLIT=|	A http://purl.obolibrary.org/obo/IAO_0000117 SPLIT=|	A rdfs:comment SPLIT=|	A oboInOwl:hasExactSynonym SPLIT=|	C 'part of' superset %	A http://www.geneontology.org/formats/oboInOwl#hasDbXref SPLIT=|	A owl:deprecated
+parco:TEST_0000001	tea	tea is a beverage					https://orcid.org/0000-0001-9227-0670					
+parco:TEST_0000002	green tea	green tea is a tea that is not withered and oxidised in the manner of oolong or black tea.					https://orcid.org/0000-0001-9227-0670					
+parco:TEST_0000003	genmaicha	genmaicha is a kind of green tea that is mixed with roasted popped brown rice.					https://orcid.org/0000-0001-9227-0670					

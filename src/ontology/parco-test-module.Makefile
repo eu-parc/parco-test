@@ -3,12 +3,15 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+.PHONY: all
+all: templates all_odk 
+
 TEMPLATESDIR=../templates
 
 TEMPLATES=$(patsubst %.tsv, $(TEMPLATESDIR)/%.owl, $(notdir $(wildcard $(TEMPLATESDIR)/*.tsv)))
 
 $(TEMPLATESDIR)/%.owl: $(TEMPLATESDIR)/%.tsv $(SRC)
-	  $(ROBOT) merge -i $(SRC) template --template $< --output $@ && \
+	$(ROBOT) merge -i $(SRC) template --prefix "parco: http://si.eu-parc.eu/PARCO-" --template $< --output $@ && \
 			  $(ROBOT) annotate --input $@ --ontology-iri $(ONTBASE)/components/$*.owl -o $@
 		  
 components/merged_parco_vocabulary.owl: $(TEMPLATES)
