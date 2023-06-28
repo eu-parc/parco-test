@@ -11,12 +11,12 @@ Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 
-Ontology: <http://purl.obolibrary.org/obo/parco-test-module/parco-test-module-idranges.owl>
+Ontology: <http://si.eu-parc.eu/parco-test-module/parco-test-module-idranges.owl>
 
 
 Annotations: 
     idsfor: "PARCO-TEST",
-    idprefix: "http://purl.obolibrary.org/obo/PARCO-TEST_",
+    idprefix: "http://si.eu-parc.eu/PARCO-TEST_",
     iddigits: 7
 
 AnnotationProperty: idprefix:
